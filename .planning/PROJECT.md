@@ -12,14 +12,13 @@ Given my existing bike measurements, tell me exactly how to set up my Zwift Ride
 
 ### Validated
 
-(None yet — ship to validate)
+- [x] User can enter manufacturer bike geometry (stack, reach, seat tube length) — Validated in Phase 02: project-scaffold-input-ui
+- [x] User can enter physical measurements (saddle height, saddle setback, handlebar height, reach, drop) — Validated in Phase 02: project-scaffold-input-ui
+- [x] User can enter body measurements (inseam, torso length, arm length) — Validated in Phase 02: project-scaffold-input-ui
+- [x] User can enter bike fit report values (key numbers, manually typed) — Validated in Phase 02: project-scaffold-input-ui
 
 ### Active
 
-- [ ] User can enter manufacturer bike geometry (stack, reach, seat tube length)
-- [ ] User can enter physical measurements (saddle height, saddle setback, handlebar height, reach, drop)
-- [ ] User can enter body measurements (inseam, torso length, arm length)
-- [ ] User can enter bike fit report values (key numbers, manually typed)
 - [ ] App calculates target Zwift Ride settings from input measurements
 - [ ] Output shows both physical measurement targets and Zwift Ride position settings (notch/dial position)
 - [ ] Output is a step-by-step adjustment guide
@@ -72,4 +71,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-21 after initialization*
+*Last updated: 2026-03-21 after Phase 02 complete — full input wizard UI shipped*
