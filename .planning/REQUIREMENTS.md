@@ -17,9 +17,9 @@
 
 ### Inputs — Frame Geometry
 
-- [ ] **FRAME-01**: User can enter frame stack (BB center to top of head tube)
-- [ ] **FRAME-02**: User can enter frame reach (BB center to top-center of head tube, horizontal)
-- [ ] **FRAME-03**: User can enter seat tube angle
+- [x] **FRAME-01**: User can enter frame stack (BB center to top of head tube)
+- [x] **FRAME-02**: User can enter frame reach (BB center to top-center of head tube, horizontal)
+- [x] **FRAME-03**: User can enter seat tube angle
 
 ### Inputs — Body Measurements
 
@@ -30,8 +30,8 @@
 
 ### Inputs — Bike Fit Report
 
-- [ ] **FIT-01**: User can manually enter key values from a professional bike fit report (saddle height, setback, reach, drop)
-- [ ] **FIT-02**: Fit report values take priority over derived/estimated values in the calculation engine
+- [x] **FIT-01**: User can manually enter key values from a professional bike fit report (saddle height, setback, reach, drop)
+- [x] **FIT-02**: Fit report values take priority over derived/estimated values in the calculation engine
 
 ### Calculation Engine
 
@@ -102,15 +102,15 @@
 | PHYS-05 | Phase 2 | Complete |
 | PHYS-06 | Phase 2 | Complete |
 | PHYS-07 | Phase 2 | Complete |
-| FRAME-01 | Phase 2 | Pending |
-| FRAME-02 | Phase 2 | Pending |
-| FRAME-03 | Phase 2 | Pending |
+| FRAME-01 | Phase 2 | Complete |
+| FRAME-02 | Phase 2 | Complete |
+| FRAME-03 | Phase 2 | Complete |
 | BODY-01 | Phase 2 | Complete |
 | BODY-02 | Phase 2 | Complete |
 | BODY-03 | Phase 2 | Complete |
 | BODY-04 | Phase 2 | Complete |
-| FIT-01 | Phase 2 | Pending |
-| FIT-02 | Phase 2 | Pending |
+| FIT-01 | Phase 2 | Complete |
+| FIT-02 | Phase 2 | Complete |
 | UX-01 | Phase 2 | Complete |
 | UX-03 | Phase 2 | Complete |
 | OUT-01 | Phase 3 | Pending |
