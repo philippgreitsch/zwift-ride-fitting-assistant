@@ -89,19 +89,43 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CALC-01–06 | Phase 1 | Pending |
-| PHYS-01–07 | Phase 2 | Pending |
-| FRAME-01–03 | Phase 2 | Pending |
-| BODY-01–04 | Phase 2 | Pending |
-| FIT-01–02 | Phase 2 | Pending |
-| OUT-01–05 | Phase 3 | Pending |
-| UX-01–04 | Phase 3 | Pending |
+| CALC-01 | Phase 1 | Pending |
+| CALC-02 | Phase 1 | Pending |
+| CALC-03 | Phase 1 | Pending |
+| CALC-04 | Phase 1 | Pending |
+| CALC-05 | Phase 1 | Pending |
+| CALC-06 | Phase 1 | Pending |
+| PHYS-01 | Phase 2 | Pending |
+| PHYS-02 | Phase 2 | Pending |
+| PHYS-03 | Phase 2 | Pending |
+| PHYS-04 | Phase 2 | Pending |
+| PHYS-05 | Phase 2 | Pending |
+| PHYS-06 | Phase 2 | Pending |
+| PHYS-07 | Phase 2 | Pending |
+| FRAME-01 | Phase 2 | Pending |
+| FRAME-02 | Phase 2 | Pending |
+| FRAME-03 | Phase 2 | Pending |
+| BODY-01 | Phase 2 | Pending |
+| BODY-02 | Phase 2 | Pending |
+| BODY-03 | Phase 2 | Pending |
+| BODY-04 | Phase 2 | Pending |
+| FIT-01 | Phase 2 | Pending |
+| FIT-02 | Phase 2 | Pending |
+| UX-01 | Phase 2 | Pending |
+| UX-03 | Phase 2 | Pending |
+| OUT-01 | Phase 3 | Pending |
+| OUT-02 | Phase 3 | Pending |
+| OUT-03 | Phase 3 | Pending |
+| OUT-04 | Phase 3 | Pending |
+| OUT-05 | Phase 3 | Pending |
+| UX-02 | Phase 3 | Pending |
+| UX-04 | Phase 3 | Pending |
 
 **Coverage:**
-- v1 requirements: 28 total
-- Mapped to phases: 28
+- v1 requirements: 31 total
+- Mapped to phases: 31
 - Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-03-21*
-*Last updated: 2026-03-21 after initial definition*
+*Last updated: 2026-03-21 after roadmap creation*
