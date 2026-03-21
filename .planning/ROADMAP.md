@@ -30,7 +30,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   5. Vitest unit tests pass for all four axes, including crank correction, out-of-range clamping, and fit-report priority override
 **Plans**: 2 plans
 Plans:
-- [ ] 01-01-PLAN.md — Scaffold Vite+TS project, define type contracts, hardware constants, and Zod validators
+- [x] 01-01-PLAN.md — Scaffold Vite+TS project, define type contracts, hardware constants, and Zod validators
 - [ ] 01-02-PLAN.md — TDD: implement all four axis calculation functions with full test coverage
 
 ### Phase 2: Project Scaffold and Input UI
