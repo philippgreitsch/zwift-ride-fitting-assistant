@@ -7,13 +7,13 @@
 
 ### Inputs — Physical Measurements
 
-- [ ] **PHYS-01**: User can enter saddle height (from bottom bracket to top of saddle) with reference point shown
-- [ ] **PHYS-02**: User can enter saddle setback (horizontal distance from BB center to saddle nose)
-- [ ] **PHYS-03**: User can enter handlebar height (from floor or BB — reference point shown)
-- [ ] **PHYS-04**: User can enter handlebar reach (horizontal distance from saddle nose to bar center)
-- [ ] **PHYS-05**: User can enter drop bar hood offsets (hood height offset and hood reach offset — how much hoods differ from bar clamp center) when handlebar type is set to drop bars
-- [ ] **PHYS-06**: User can enter crank length (for saddle height correction, since Zwift Ride uses 170mm cranks)
-- [ ] **PHYS-07**: User can select handlebar type (drop bars vs flat bars) to trigger correct reach calculation
+- [x] **PHYS-01**: User can enter saddle height (from bottom bracket to top of saddle) with reference point shown
+- [x] **PHYS-02**: User can enter saddle setback (horizontal distance from BB center to saddle nose)
+- [x] **PHYS-03**: User can enter handlebar height (from floor or BB — reference point shown)
+- [x] **PHYS-04**: User can enter handlebar reach (horizontal distance from saddle nose to bar center)
+- [x] **PHYS-05**: User can enter drop bar hood offsets (hood height offset and hood reach offset — how much hoods differ from bar clamp center) when handlebar type is set to drop bars
+- [x] **PHYS-06**: User can enter crank length (for saddle height correction, since Zwift Ride uses 170mm cranks)
+- [x] **PHYS-07**: User can select handlebar type (drop bars vs flat bars) to trigger correct reach calculation
 
 ### Inputs — Frame Geometry
 
@@ -23,10 +23,10 @@
 
 ### Inputs — Body Measurements
 
-- [ ] **BODY-01**: User can enter inseam length
-- [ ] **BODY-02**: User can enter torso length
-- [ ] **BODY-03**: User can enter arm length
-- [ ] **BODY-04**: App derives estimated position targets from body measurements when direct measurements are absent
+- [x] **BODY-01**: User can enter inseam length
+- [x] **BODY-02**: User can enter torso length
+- [x] **BODY-03**: User can enter arm length
+- [x] **BODY-04**: App derives estimated position targets from body measurements when direct measurements are absent
 
 ### Inputs — Bike Fit Report
 
@@ -95,20 +95,20 @@
 | CALC-04 | Phase 1 | Complete |
 | CALC-05 | Phase 1 | Complete |
 | CALC-06 | Phase 1 | Complete |
-| PHYS-01 | Phase 2 | Pending |
-| PHYS-02 | Phase 2 | Pending |
-| PHYS-03 | Phase 2 | Pending |
-| PHYS-04 | Phase 2 | Pending |
-| PHYS-05 | Phase 2 | Pending |
-| PHYS-06 | Phase 2 | Pending |
-| PHYS-07 | Phase 2 | Pending |
+| PHYS-01 | Phase 2 | Complete |
+| PHYS-02 | Phase 2 | Complete |
+| PHYS-03 | Phase 2 | Complete |
+| PHYS-04 | Phase 2 | Complete |
+| PHYS-05 | Phase 2 | Complete |
+| PHYS-06 | Phase 2 | Complete |
+| PHYS-07 | Phase 2 | Complete |
 | FRAME-01 | Phase 2 | Pending |
 | FRAME-02 | Phase 2 | Pending |
 | FRAME-03 | Phase 2 | Pending |
-| BODY-01 | Phase 2 | Pending |
-| BODY-02 | Phase 2 | Pending |
-| BODY-03 | Phase 2 | Pending |
-| BODY-04 | Phase 2 | Pending |
+| BODY-01 | Phase 2 | Complete |
+| BODY-02 | Phase 2 | Complete |
+| BODY-03 | Phase 2 | Complete |
+| BODY-04 | Phase 2 | Complete |
 | FIT-01 | Phase 2 | Pending |
 | FIT-02 | Phase 2 | Pending |
 | UX-01 | Phase 2 | Complete |

@@ -47,7 +47,7 @@ Plans:
 Plans:
 - [x] 02-01-PLAN.md — Install dependencies, wire Tailwind v4 + shadcn/ui, create Zustand store and reusable field components
 - [x] 02-02-PLAN.md — Build wizard shell with step indicator, skill level selector, and navigation
-- [ ] 02-03-PLAN.md — Build Physical Measurements step and Body Measurements step
+- [x] 02-03-PLAN.md — Build Physical Measurements step and Body Measurements step
 - [ ] 02-04-PLAN.md — Build Frame Geometry, Fit Report, and Results placeholder steps
 - [ ] 02-05-PLAN.md — Mobile responsiveness audit, dark mode, and visual verification checkpoint
 
@@ -72,5 +72,5 @@ Phases execute in numeric order: 1 → 2 → 3
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Calculation Engine | 2/2 | Complete    | 2026-03-21 |
-| 2. Project Scaffold and Input UI | 0/5 | Not started | - |
+| 2. Project Scaffold and Input UI | 3/5 | In Progress|  |
 | 3. Output, Persistence, and Deploy | 0/? | Not started | - |
