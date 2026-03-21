@@ -49,7 +49,7 @@ Plans:
 - [x] 02-02-PLAN.md — Build wizard shell with step indicator, skill level selector, and navigation
 - [x] 02-03-PLAN.md — Build Physical Measurements step and Body Measurements step
 - [x] 02-04-PLAN.md — Build Frame Geometry, Fit Report, and Results placeholder steps
-- [ ] 02-05-PLAN.md — Mobile responsiveness audit, dark mode, and visual verification checkpoint
+- [x] 02-05-PLAN.md — Mobile responsiveness audit, dark mode, and visual verification checkpoint
 
 ### Phase 3: Output, Persistence, and Deploy
 **Goal**: The app is live and accessible — cyclists enter measurements, receive a complete step-by-step Zwift Ride adjustment guide, and their data persists across sessions
