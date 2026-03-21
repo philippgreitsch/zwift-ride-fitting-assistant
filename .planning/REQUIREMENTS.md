@@ -52,9 +52,9 @@
 
 ### UX & Persistence
 
-- [ ] **UX-01**: Every measurement input field shows a reference point definition (e.g. "measure from center of BB axle to top of saddle")
+- [x] **UX-01**: Every measurement input field shows a reference point definition (e.g. "measure from center of BB axle to top of saddle")
 - [ ] **UX-02**: All entered measurements are saved to browser localStorage and restored on next visit
-- [ ] **UX-03**: App is mobile-responsive and usable on a phone next to the bike
+- [x] **UX-03**: App is mobile-responsive and usable on a phone next to the bike
 - [ ] **UX-04**: User can clear/reset all saved measurements and start fresh
 
 ## v2 Requirements
@@ -111,8 +111,8 @@
 | BODY-04 | Phase 2 | Pending |
 | FIT-01 | Phase 2 | Pending |
 | FIT-02 | Phase 2 | Pending |
-| UX-01 | Phase 2 | Pending |
-| UX-03 | Phase 2 | Pending |
+| UX-01 | Phase 2 | Complete |
+| UX-03 | Phase 2 | Complete |
 | OUT-01 | Phase 3 | Pending |
 | OUT-02 | Phase 3 | Pending |
 | OUT-03 | Phase 3 | Pending |

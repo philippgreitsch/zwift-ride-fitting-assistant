@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Phase 2 plans complete (5 plans, verified)
-last_updated: "2026-03-21T19:13:53.282Z"
+stopped_at: Completed 02-project-scaffold-input-ui 02-01-PLAN.md
+last_updated: "2026-03-21T19:21:45.823Z"
 progress:
   total_phases: 3
   completed_phases: 1
   total_plans: 7
-  completed_plans: 2
+  completed_plans: 3
 ---
 
 # Project State
@@ -24,7 +24,7 @@ See: .planning/PROJECT.md (updated 2026-03-21)
 ## Current Position
 
 Phase: 02 (project-scaffold-input-ui) — EXECUTING
-Plan: 1 of 5
+Plan: 2 of 5
 
 ## Performance Metrics
 
@@ -48,6 +48,7 @@ Plan: 1 of 5
 *Updated after each plan completion*
 | Phase 01-calculation-engine P01 | 5 | 2 tasks | 11 files |
 | Phase 01-calculation-engine P02 | 3 | 1 tasks | 2 files |
+| Phase 02-project-scaffold-input-ui P01 | 5 | 2 tasks | 18 files |
 
 ## Accumulated Context
 
@@ -65,6 +66,9 @@ Recent decisions affecting current work:
 - [Phase 01-calculation-engine]: LeMond formula coefficient (0.883) inline in calculations.ts — domain math constant, not hardware constant, so inline is appropriate
 - [Phase 01-calculation-engine]: buildAxisOutputNullableRange variant for handlebar reach — handles null HANDLEBAR_REACH_RANGE bounds without scattered null-checks in the reach function
 - [Phase 01-calculation-engine]: allAxesOutOfRange counts only non-null axes — null means no data (D-13), not out-of-range (D-11)
+- [Phase 02-project-scaffold-input-ui]: shadcn/ui init --defaults selects base-nova style (base-ui/react primitives) in 2026, not the legacy Radix/slate setup
+- [Phase 02-project-scaffold-input-ui]: shadcn init requires @/* path alias in tsconfig — added to root tsconfig.json and tsconfig.app.json
+- [Phase 02-project-scaffold-input-ui]: Zustand store no persist middleware in Phase 2 — deferred to Phase 3 per UX-02
 
 ### Pending Todos
 
@@ -78,6 +82,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-21T19:13:03.789Z
-Stopped at: Phase 2 plans complete (5 plans, verified)
-Resume file: .planning/phases/02-project-scaffold-input-ui/02-01-PLAN.md
+Last session: 2026-03-21T19:21:45.821Z
+Stopped at: Completed 02-project-scaffold-input-ui 02-01-PLAN.md
+Resume file: None

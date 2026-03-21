@@ -45,7 +45,7 @@ Plans:
   5. The app is fully usable on a phone screen held beside the Zwift Ride (no horizontal scrolling, inputs are thumb-reachable)
 **Plans**: 5 plans
 Plans:
-- [ ] 02-01-PLAN.md — Install dependencies, wire Tailwind v4 + shadcn/ui, create Zustand store and reusable field components
+- [x] 02-01-PLAN.md — Install dependencies, wire Tailwind v4 + shadcn/ui, create Zustand store and reusable field components
 - [ ] 02-02-PLAN.md — Build wizard shell with step indicator, skill level selector, and navigation
 - [ ] 02-03-PLAN.md — Build Physical Measurements step and Body Measurements step
 - [ ] 02-04-PLAN.md — Build Frame Geometry, Fit Report, and Results placeholder steps
