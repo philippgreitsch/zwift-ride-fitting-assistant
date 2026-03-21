@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 01-calculation-engine/01-01-PLAN.md
-last_updated: "2026-03-21T13:37:38.038Z"
+stopped_at: Completed 01-calculation-engine/01-02-PLAN.md
+last_updated: "2026-03-21T16:40:41.863Z"
 progress:
   total_phases: 3
-  completed_phases: 0
+  completed_phases: 1
   total_plans: 2
-  completed_plans: 1
+  completed_plans: 2
 ---
 
 # Project State
@@ -47,6 +47,7 @@ Plan: 2 of 2
 
 *Updated after each plan completion*
 | Phase 01-calculation-engine P01 | 5 | 2 tasks | 11 files |
+| Phase 01-calculation-engine P02 | 3 | 1 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -61,6 +62,9 @@ Recent decisions affecting current work:
 - [Phase 01-calculation-engine]: Used @vitejs/plugin-react v6 for Vite 8 compatibility — v4 lacks Vite 8 peer dep support
 - [Phase 01-calculation-engine]: Added passWithNoTests: true to vitest.config.ts — Vitest exits code 1 with no test files by default
 - [Phase 01-calculation-engine]: All letter-to-mm lookup tables are empty Records — no arithmetic derivation per PITFALLS.md Pitfall 1
+- [Phase 01-calculation-engine]: LeMond formula coefficient (0.883) inline in calculations.ts — domain math constant, not hardware constant, so inline is appropriate
+- [Phase 01-calculation-engine]: buildAxisOutputNullableRange variant for handlebar reach — handles null HANDLEBAR_REACH_RANGE bounds without scattered null-checks in the reach function
+- [Phase 01-calculation-engine]: allAxesOutOfRange counts only non-null axes — null means no data (D-13), not out-of-range (D-11)
 
 ### Pending Todos
 
@@ -74,6 +78,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-21T13:37:38.036Z
-Stopped at: Completed 01-calculation-engine/01-01-PLAN.md
+Last session: 2026-03-21T16:40:41.862Z
+Stopped at: Completed 01-calculation-engine/01-02-PLAN.md
 Resume file: None

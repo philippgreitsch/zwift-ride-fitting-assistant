@@ -12,7 +12,7 @@ Three phases take this project from zero to a live, working tool. Phase 1 builds
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Calculation Engine** - Hardware constants, all four axis calculations, and unit tests verified against a physical Zwift Ride
+- [x] **Phase 1: Calculation Engine** - Hardware constants, all four axis calculations, and unit tests verified against a physical Zwift Ride (completed 2026-03-21)
 - [ ] **Phase 2: Project Scaffold and Input UI** - Vite/React app scaffolded with Zustand store; all measurement input forms built and mobile-responsive
 - [ ] **Phase 3: Output, Persistence, and Deploy** - Step-by-step adjustment guide, localStorage persistence, and live deployment on Vercel
 
@@ -31,7 +31,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 2 plans
 Plans:
 - [x] 01-01-PLAN.md — Scaffold Vite+TS project, define type contracts, hardware constants, and Zod validators
-- [ ] 01-02-PLAN.md — TDD: implement all four axis calculation functions with full test coverage
+- [x] 01-02-PLAN.md — TDD: implement all four axis calculation functions with full test coverage
 
 ### Phase 2: Project Scaffold and Input UI
 **Goal**: A working React app where a cyclist can enter all their bike measurements across all four input modes and see the data ready for calculation
@@ -65,6 +65,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Calculation Engine | 0/2 | Planning complete | - |
+| 1. Calculation Engine | 2/2 | Complete   | 2026-03-21 |
 | 2. Project Scaffold and Input UI | 0/? | Not started | - |
 | 3. Output, Persistence, and Deploy | 0/? | Not started | - |

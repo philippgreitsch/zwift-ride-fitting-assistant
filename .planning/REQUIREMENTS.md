@@ -35,10 +35,10 @@
 
 ### Calculation Engine
 
-- [ ] **CALC-01**: App calculates target Zwift Ride saddle height (mm) from input measurements, corrected for crank length difference
-- [ ] **CALC-02**: App calculates target Zwift Ride saddle fore/aft position (mm) from input measurements
-- [ ] **CALC-03**: App calculates target Zwift Ride handlebar height (mm) from input measurements
-- [ ] **CALC-04**: App calculates target Zwift Ride handlebar reach (mm) from input measurements, accounting for handlebar type (drop vs flat)
+- [x] **CALC-01**: App calculates target Zwift Ride saddle height (mm) from input measurements, corrected for crank length difference
+- [x] **CALC-02**: App calculates target Zwift Ride saddle fore/aft position (mm) from input measurements
+- [x] **CALC-03**: App calculates target Zwift Ride handlebar height (mm) from input measurements
+- [x] **CALC-04**: App calculates target Zwift Ride handlebar reach (mm) from input measurements, accounting for handlebar type (drop vs flat)
 - [x] **CALC-05**: App converts each mm target to the corresponding Zwift Ride letter position using the hardware lookup table
 - [x] **CALC-06**: App applies priority order: fit report values > direct measurements > frame geometry derivations > body measurement estimations
 
@@ -89,10 +89,10 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CALC-01 | Phase 1 | Pending |
-| CALC-02 | Phase 1 | Pending |
-| CALC-03 | Phase 1 | Pending |
-| CALC-04 | Phase 1 | Pending |
+| CALC-01 | Phase 1 | Complete |
+| CALC-02 | Phase 1 | Complete |
+| CALC-03 | Phase 1 | Complete |
+| CALC-04 | Phase 1 | Complete |
 | CALC-05 | Phase 1 | Complete |
 | CALC-06 | Phase 1 | Complete |
 | PHYS-01 | Phase 2 | Pending |
