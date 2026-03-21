@@ -11,7 +11,7 @@
 - [ ] **PHYS-02**: User can enter saddle setback (horizontal distance from BB center to saddle nose)
 - [ ] **PHYS-03**: User can enter handlebar height (from floor or BB — reference point shown)
 - [ ] **PHYS-04**: User can enter handlebar reach (horizontal distance from saddle nose to bar center)
-- [ ] **PHYS-05**: User can enter handlebar drop (for drop bars — height difference between saddle and hoods)
+- [ ] **PHYS-05**: User can enter drop bar hood offsets (hood height offset and hood reach offset — how much hoods differ from bar clamp center) when handlebar type is set to drop bars
 - [ ] **PHYS-06**: User can enter crank length (for saddle height correction, since Zwift Ride uses 170mm cranks)
 - [ ] **PHYS-07**: User can select handlebar type (drop bars vs flat bars) to trigger correct reach calculation
 
@@ -19,7 +19,7 @@
 
 - [ ] **FRAME-01**: User can enter frame stack (BB center to top of head tube)
 - [ ] **FRAME-02**: User can enter frame reach (BB center to top-center of head tube, horizontal)
-- [ ] **FRAME-03**: User can enter seat tube length and angle
+- [ ] **FRAME-03**: User can enter seat tube angle
 
 ### Inputs — Body Measurements
 
@@ -124,8 +124,8 @@
 **Coverage:**
 - v1 requirements: 31 total
 - Mapped to phases: 31
-- Unmapped: 0 ✓
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-21*
-*Last updated: 2026-03-21 after roadmap creation*
+*Last updated: 2026-03-21 after checker revision — PHYS-05 and FRAME-03 aligned with FitInputs type contract*
