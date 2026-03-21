@@ -43,7 +43,13 @@ Plans:
   3. Handlebar type selector (drop bar / flat bar) is present and wired to trigger the correct calculation branch
   4. Crank length field is present and wired to the saddle height correction
   5. The app is fully usable on a phone screen held beside the Zwift Ride (no horizontal scrolling, inputs are thumb-reachable)
-**Plans**: TBD
+**Plans**: 5 plans
+Plans:
+- [ ] 02-01-PLAN.md — Install dependencies, wire Tailwind v4 + shadcn/ui, create Zustand store and reusable field components
+- [ ] 02-02-PLAN.md — Build wizard shell with step indicator, skill level selector, and navigation
+- [ ] 02-03-PLAN.md — Build Physical Measurements step and Body Measurements step
+- [ ] 02-04-PLAN.md — Build Frame Geometry, Fit Report, and Results placeholder steps
+- [ ] 02-05-PLAN.md — Mobile responsiveness audit, dark mode, and visual verification checkpoint
 
 ### Phase 3: Output, Persistence, and Deploy
 **Goal**: The app is live and accessible — cyclists enter measurements, receive a complete step-by-step Zwift Ride adjustment guide, and their data persists across sessions
@@ -66,5 +72,5 @@ Phases execute in numeric order: 1 → 2 → 3
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Calculation Engine | 2/2 | Complete    | 2026-03-21 |
-| 2. Project Scaffold and Input UI | 0/? | Not started | - |
+| 2. Project Scaffold and Input UI | 0/5 | Not started | - |
 | 3. Output, Persistence, and Deploy | 0/? | Not started | - |
