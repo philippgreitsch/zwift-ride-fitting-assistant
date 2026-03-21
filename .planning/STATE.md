@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 02-project-scaffold-input-ui 02-01-PLAN.md
-last_updated: "2026-03-21T19:21:45.823Z"
+stopped_at: Completed 02-project-scaffold-input-ui 02-02-PLAN.md
+last_updated: "2026-03-21T19:25:43.150Z"
 progress:
   total_phases: 3
   completed_phases: 1
   total_plans: 7
-  completed_plans: 3
+  completed_plans: 4
 ---
 
 # Project State
@@ -24,7 +24,7 @@ See: .planning/PROJECT.md (updated 2026-03-21)
 ## Current Position
 
 Phase: 02 (project-scaffold-input-ui) — EXECUTING
-Plan: 2 of 5
+Plan: 3 of 5
 
 ## Performance Metrics
 
@@ -49,6 +49,7 @@ Plan: 2 of 5
 | Phase 01-calculation-engine P01 | 5 | 2 tasks | 11 files |
 | Phase 01-calculation-engine P02 | 3 | 1 tasks | 2 files |
 | Phase 02-project-scaffold-input-ui P01 | 5 | 2 tasks | 18 files |
+| Phase 02-project-scaffold-input-ui P02 | 3 | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -69,6 +70,9 @@ Recent decisions affecting current work:
 - [Phase 02-project-scaffold-input-ui]: shadcn/ui init --defaults selects base-nova style (base-ui/react primitives) in 2026, not the legacy Radix/slate setup
 - [Phase 02-project-scaffold-input-ui]: shadcn init requires @/* path alias in tsconfig — added to root tsconfig.json and tsconfig.app.json
 - [Phase 02-project-scaffold-input-ui]: Zustand store no persist middleware in Phase 2 — deferred to Phase 3 per UX-02
+- [Phase 02-project-scaffold-input-ui]: WizardShell uses two DOM branches for mobile/desktop layouts to avoid Card padding conflicts with full-bleed mobile requirement
+- [Phase 02-project-scaffold-input-ui]: SkillLevelSelector border-2 always present; only color toggled on selection to prevent layout shift
+- [Phase 02-project-scaffold-input-ui]: Badge 'Start here' uses inline bg-orange-500 override — base-nova default variant maps to slate primary, not orange-500
 
 ### Pending Todos
 
@@ -82,6 +86,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-21T19:21:45.821Z
-Stopped at: Completed 02-project-scaffold-input-ui 02-01-PLAN.md
+Last session: 2026-03-21T19:25:43.148Z
+Stopped at: Completed 02-project-scaffold-input-ui 02-02-PLAN.md
 Resume file: None

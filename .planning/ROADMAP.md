@@ -46,7 +46,7 @@ Plans:
 **Plans**: 5 plans
 Plans:
 - [x] 02-01-PLAN.md — Install dependencies, wire Tailwind v4 + shadcn/ui, create Zustand store and reusable field components
-- [ ] 02-02-PLAN.md — Build wizard shell with step indicator, skill level selector, and navigation
+- [x] 02-02-PLAN.md — Build wizard shell with step indicator, skill level selector, and navigation
 - [ ] 02-03-PLAN.md — Build Physical Measurements step and Body Measurements step
 - [ ] 02-04-PLAN.md — Build Frame Geometry, Fit Report, and Results placeholder steps
 - [ ] 02-05-PLAN.md — Mobile responsiveness audit, dark mode, and visual verification checkpoint
