@@ -1,6 +1,8 @@
 import { useFitStore } from '@/store/fitStore'
 import { SkillLevelSelector } from './SkillLevelSelector'
 import { StepIndicator } from './StepIndicator'
+import { PhysicalStep } from './steps/PhysicalStep'
+import { BodyStep } from './steps/BodyStep'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
@@ -82,7 +84,38 @@ export function WizardShell() {
 
             {/* Step content */}
             <div className="mt-2">
-              <StepPlaceholder step={currentStep} />
+              {currentStep === 1 ? (
+                <div className="flex flex-col gap-3">
+                  {STEP_BADGES[1] && (
+                    <div className="flex items-center gap-2">
+                      <Badge
+                        variant="default"
+                        className="bg-orange-500 text-white border-transparent"
+                      >
+                        Start here
+                      </Badge>
+                    </div>
+                  )}
+                  <p className="text-[16px] leading-[1.5] text-zinc-500">
+                    Fill in what you have. Anything left blank will be estimated or skipped.
+                  </p>
+                  <PhysicalStep />
+                </div>
+              ) : currentStep === 2 ? (
+                <div className="flex flex-col gap-3">
+                  {STEP_BADGES[2] && (
+                    <div className="flex items-center gap-2">
+                      <Badge variant="secondary">Optional</Badge>
+                    </div>
+                  )}
+                  <p className="text-[16px] leading-[1.5] text-zinc-500">
+                    Fill in what you have. Anything left blank will be estimated or skipped.
+                  </p>
+                  <BodyStep />
+                </div>
+              ) : (
+                <StepPlaceholder step={currentStep} />
+              )}
             </div>
 
             {/* Navigation buttons */}
