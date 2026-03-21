@@ -3,61 +3,12 @@ import { SkillLevelSelector } from './SkillLevelSelector'
 import { StepIndicator } from './StepIndicator'
 import { PhysicalStep } from './steps/PhysicalStep'
 import { BodyStep } from './steps/BodyStep'
+import { FrameStep } from './steps/FrameStep'
+import { FitReportStep } from './steps/FitReportStep'
+import { ResultsStep } from './steps/ResultsStep'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { Card, CardContent, CardHeader } from '@/components/ui/card'
-
-const STEP_BADGES: Record<number, { text: string; variant: 'default' | 'secondary' }> = {
-  1: { text: 'Start here', variant: 'default' },
-  2: { text: 'Optional', variant: 'secondary' },
-  3: { text: 'Optional', variant: 'secondary' },
-  4: { text: 'Optional', variant: 'secondary' },
-}
-
-function StepPlaceholder({ step }: { step: number }) {
-  if (step === 5) {
-    return (
-      <Card className="border border-zinc-200 dark:border-zinc-800">
-        <CardHeader>
-          <h2 className="text-[28px] font-semibold leading-[1.15] text-zinc-950 dark:text-zinc-50">
-            Your settings are ready
-          </h2>
-        </CardHeader>
-        <CardContent className="flex flex-col gap-2">
-          <p className="text-[16px] leading-[1.5] text-zinc-950 dark:text-zinc-50">
-            We've calculated your Zwift Ride target positions. Full adjustment guide coming in the next update.
-          </p>
-          <p className="text-[14px] text-zinc-500">
-            Come back soon — or check the project for updates.
-          </p>
-        </CardContent>
-      </Card>
-    )
-  }
-
-  const badge = STEP_BADGES[step]
-
-  return (
-    <div className="flex flex-col gap-3">
-      {badge && (
-        <div className="flex items-center gap-2">
-          <Badge
-            variant={badge.variant}
-            className={badge.variant === 'default' ? 'bg-orange-500 text-white border-transparent' : undefined}
-          >
-            {badge.text}
-          </Badge>
-        </div>
-      )}
-      <p className="text-[16px] leading-[1.5] text-zinc-500">
-        Fill in what you have. Anything left blank will be estimated or skipped.
-      </p>
-      <div className="py-6">
-        <p className="text-zinc-500">Step {step} content — coming soon</p>
-      </div>
-    </div>
-  )
-}
+import { Card } from '@/components/ui/card'
 
 export function WizardShell() {
   const { currentStep, setCurrentStep } = useFitStore()
@@ -65,6 +16,68 @@ export function WizardShell() {
   const isSkillSelector = currentStep === 0
   const isResults = currentStep === 5
   const isLastInputStep = currentStep === 4
+
+  function renderStepContent() {
+    switch (currentStep) {
+      case 1:
+        return (
+          <div className="flex flex-col gap-3">
+            <div className="flex items-center gap-2">
+              <Badge
+                variant="default"
+                className="bg-orange-500 text-white border-transparent"
+              >
+                Start here
+              </Badge>
+            </div>
+            <p className="text-[16px] leading-[1.5] text-zinc-500">
+              Fill in what you have. Anything left blank will be estimated or skipped.
+            </p>
+            <PhysicalStep />
+          </div>
+        )
+      case 2:
+        return (
+          <div className="flex flex-col gap-3">
+            <div className="flex items-center gap-2">
+              <Badge variant="secondary">Optional</Badge>
+            </div>
+            <p className="text-[16px] leading-[1.5] text-zinc-500">
+              Fill in what you have. Anything left blank will be estimated or skipped.
+            </p>
+            <BodyStep />
+          </div>
+        )
+      case 3:
+        return (
+          <div className="flex flex-col gap-3">
+            <div className="flex items-center gap-2">
+              <Badge variant="secondary">Optional</Badge>
+            </div>
+            <p className="text-[16px] leading-[1.5] text-zinc-500">
+              Fill in what you have. Anything left blank will be estimated or skipped.
+            </p>
+            <FrameStep />
+          </div>
+        )
+      case 4:
+        return (
+          <div className="flex flex-col gap-3">
+            <div className="flex items-center gap-2">
+              <Badge variant="secondary">Optional</Badge>
+            </div>
+            <p className="text-[16px] leading-[1.5] text-zinc-500">
+              Fill in what you have. Anything left blank will be estimated or skipped.
+            </p>
+            <FitReportStep />
+          </div>
+        )
+      case 5:
+        return <ResultsStep />
+      default:
+        return null
+    }
+  }
 
   const content = (
     <div className="flex flex-col gap-6 py-6">
@@ -84,38 +97,7 @@ export function WizardShell() {
 
             {/* Step content */}
             <div className="mt-2">
-              {currentStep === 1 ? (
-                <div className="flex flex-col gap-3">
-                  {STEP_BADGES[1] && (
-                    <div className="flex items-center gap-2">
-                      <Badge
-                        variant="default"
-                        className="bg-orange-500 text-white border-transparent"
-                      >
-                        Start here
-                      </Badge>
-                    </div>
-                  )}
-                  <p className="text-[16px] leading-[1.5] text-zinc-500">
-                    Fill in what you have. Anything left blank will be estimated or skipped.
-                  </p>
-                  <PhysicalStep />
-                </div>
-              ) : currentStep === 2 ? (
-                <div className="flex flex-col gap-3">
-                  {STEP_BADGES[2] && (
-                    <div className="flex items-center gap-2">
-                      <Badge variant="secondary">Optional</Badge>
-                    </div>
-                  )}
-                  <p className="text-[16px] leading-[1.5] text-zinc-500">
-                    Fill in what you have. Anything left blank will be estimated or skipped.
-                  </p>
-                  <BodyStep />
-                </div>
-              ) : (
-                <StepPlaceholder step={currentStep} />
-              )}
+              {renderStepContent()}
             </div>
 
             {/* Navigation buttons */}
