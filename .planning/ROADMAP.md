@@ -65,6 +65,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Calculation Engine | 2/2 | Complete   | 2026-03-21 |
+| 1. Calculation Engine | 2/2 | Complete    | 2026-03-21 |
 | 2. Project Scaffold and Input UI | 0/? | Not started | - |
 | 3. Output, Persistence, and Deploy | 0/? | Not started | - |
