@@ -28,7 +28,10 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Given handlebar reach and handlebar type, the app produces a reach target in mm that accounts for the hand contact point difference between drop and flat bars
   4. Each mm target is converted to the correct Zwift Ride letter position using the verified hardware lookup table
   5. Vitest unit tests pass for all four axes, including crank correction, out-of-range clamping, and fit-report priority override
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 01-01-PLAN.md — Scaffold Vite+TS project, define type contracts, hardware constants, and Zod validators
+- [ ] 01-02-PLAN.md — TDD: implement all four axis calculation functions with full test coverage
 
 ### Phase 2: Project Scaffold and Input UI
 **Goal**: A working React app where a cyclist can enter all their bike measurements across all four input modes and see the data ready for calculation
@@ -62,6 +65,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Calculation Engine | 0/? | Not started | - |
+| 1. Calculation Engine | 0/2 | Planning complete | - |
 | 2. Project Scaffold and Input UI | 0/? | Not started | - |
 | 3. Output, Persistence, and Deploy | 0/? | Not started | - |
