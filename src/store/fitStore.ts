@@ -48,7 +48,7 @@ export const useFitStore = create<FitStore>()(
       partialize: (state) => ({
         inputs: state.inputs,
         skillLevel: state.skillLevel,
-        // currentStep intentionally excluded — always start at step 0 on reload
+        currentStep: state.currentStep,
       }),
     }
   )
