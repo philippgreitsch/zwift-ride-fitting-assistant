@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 03-output-persistence-and-deploy 03-04-PLAN.md
-last_updated: "2026-03-22T11:14:37.911Z"
+stopped_at: Completed 03-output-persistence-and-deploy 03-06-PLAN.md
+last_updated: "2026-03-22T12:18:33.014Z"
 progress:
   total_phases: 3
   completed_phases: 3
-  total_plans: 11
-  completed_plans: 11
+  total_plans: 13
+  completed_plans: 13
 ---
 
 # Project State
@@ -57,6 +57,8 @@ Plan: 4 of 4
 | Phase 03-output-persistence-and-deploy P02 | 68 | 2 tasks | 3 files |
 | Phase 03-output-persistence-and-deploy P03 | 55 | 1 tasks | 1 files |
 | Phase 03-output-persistence-and-deploy P04 | 15 | 2 tasks | 0 files |
+| Phase 03-output-persistence-and-deploy P05 | 10 | 2 tasks | 4 files |
+| Phase 03-output-persistence-and-deploy P06 | 5 | 1 tasks | 1 files |
 
 ## Accumulated Context
 
@@ -94,6 +96,8 @@ Recent decisions affecting current work:
 - [Phase 03-output-persistence-and-deploy]: hasAnyData guard prevents four empty AxisCards when no measurements entered — shows prompt instead (Pitfall 3 from RESEARCH.md)
 - [Phase 03-output-persistence-and-deploy]: Start over button appears in both empty-state and results state to allow reset from any results screen state (UX-04)
 - [Phase 03-output-persistence-and-deploy]: Deployed via Vercel GitHub integration — zero-config Vite auto-detection, no vercel.json needed
+- [Phase 03-output-persistence-and-deploy]: getValues(fieldName) inside handleBlur reads current RHF state — watch() snapshot is stale on blur with mode:'onBlur'
+- [Phase 03-output-persistence-and-deploy]: Reversed Phase 03 decision to exclude currentStep from persist partialize — UAT confirmed users lost wizard position on every page refresh
 
 ### Pending Todos
 
@@ -107,6 +111,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-22T11:14:37.910Z
-Stopped at: Completed 03-output-persistence-and-deploy 03-04-PLAN.md
+Last session: 2026-03-22T12:18:33.012Z
+Stopped at: Completed 03-output-persistence-and-deploy 03-06-PLAN.md
 Resume file: None
