@@ -19,11 +19,14 @@ Given my existing bike measurements, tell me exactly how to set up my Zwift Ride
 
 ### Active
 
-- [ ] App calculates target Zwift Ride settings from input measurements
-- [ ] Output shows both physical measurement targets and Zwift Ride position settings (notch/dial position)
-- [ ] Output is a step-by-step adjustment guide
-- [ ] Measurements are saved in browser local storage (no re-entry on return visits)
-- [ ] App is deployed online and accessible as a free service
+- [ ] Output shows Zwift Ride letter positions (notch/dial) alongside mm targets — pending hardware lookup table data
+
+### Validated
+
+- [x] App calculates target Zwift Ride settings from input measurements — Validated in Phase 03: output-persistence-and-deploy
+- [x] Output is a step-by-step adjustment guide (saddle height, saddle fore/aft, bar height, bar reach) — Validated in Phase 03: output-persistence-and-deploy
+- [x] Measurements are saved in browser localStorage and restored on return visits — Validated in Phase 03: output-persistence-and-deploy
+- [x] App is deployed online and accessible as a free service — Validated in Phase 03: output-persistence-and-deploy (https://zwift-ride-fitting-assistant.vercel.app)
 
 ### Out of Scope
 
@@ -49,9 +52,10 @@ Given my existing bike measurements, tell me exactly how to set up my Zwift Ride
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Manual entry only (no PDF parsing) | Simpler to build, users can copy key numbers from fit reports | — Pending |
-| Local storage for persistence | No backend needed, keeps it free and private | — Pending |
-| Show both mm measurements and Zwift Ride positions | Users who measure and users who use notch system are both covered | — Pending |
+| Manual entry only (no PDF parsing) | Simpler to build, users can copy key numbers from fit reports | Validated — works well in practice |
+| Local storage for persistence | No backend needed, keeps it free and private | Validated — Zustand persist middleware, blur-sync to store |
+| Show both mm measurements and Zwift Ride positions | Users who measure and users who use notch system are both covered | Partial — mm targets live; letter positions pending hardware data |
+| currentStep included in persist partialize | UAT showed users expect to return to their last step | Reversed initial decision — confirmed correct by UAT |
 
 ## Evolution
 
@@ -71,4 +75,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-21 after Phase 02 complete — full input wizard UI shipped*
+*Last updated: 2026-03-22 after Phase 03 complete — app live at https://zwift-ride-fitting-assistant.vercel.app. v1.0 milestone complete pending hardware lookup table data.*
