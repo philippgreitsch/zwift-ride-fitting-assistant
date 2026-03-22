@@ -112,7 +112,7 @@ export function PhysicalStep() {
         : '',
   }
 
-  const { watch, setValue } = useForm<PhysicalFormValues>({
+  const { watch, setValue, getValues } = useForm<PhysicalFormValues>({
     mode: 'onBlur',
     resolver: zodResolver(physicalFormSchema),
     defaultValues,
@@ -127,7 +127,7 @@ export function PhysicalStep() {
 
   // Blur sync helper — validates inline, then writes to Zustand
   function handleBlur(fieldName: keyof typeof RANGES) {
-    const raw = values[fieldName]
+    const raw = getValues(fieldName)
     const error = validateField(fieldName, raw)
     setFieldErrors((prev) => ({ ...prev, [fieldName]: error }))
     if (!error) {
