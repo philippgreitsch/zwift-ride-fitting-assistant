@@ -69,6 +69,23 @@ Plans:
 - [x] 03-03-PLAN.md — Wire ResultsStep to calculation engine and output components
 - [x] 03-04-PLAN.md — Production build verification and Vercel deployment checkpoint
 
+## Backlog
+
+### Phase 999.1: Zwift Ride Lookup Table Population (BACKLOG)
+
+**Goal:** Physically measure a Zwift Ride to populate the four axis letter-position lookup tables in `src/lib/zwiftRideConstants.ts`, enabling the app to show Zwift Ride letter positions (A–H or similar) alongside mm targets
+**Requirements:** TBD
+**Plans:** 0 plans
+
+Context:
+- The four lookup tables (`saddleHeightTable`, `saddleForeAftTable`, `barHeightTable`, `barReachTable`) are currently empty arrays
+- The calculation engine is fully wired — `AxisCard` renders State 4 ("Letter position not yet confirmed") when letter data is null
+- This is a data task, not a code task: measure each axis at known mm positions, record the letter/notch label, populate the arrays
+- Once tables are populated, the app immediately shows letter positions for all in-range axes
+
+Plans:
+- [ ] TBD (promote with /gsd:review-backlog when ready)
+
 ## Progress
 
 **Execution Order:**
