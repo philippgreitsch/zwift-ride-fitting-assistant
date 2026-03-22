@@ -60,7 +60,7 @@ export function FrameStep() {
       frame?.seatTubeAngle !== undefined ? String(frame.seatTubeAngle) : '',
   }
 
-  const { watch, setValue } = useForm<FrameFormValues>({
+  const { watch, setValue, getValues } = useForm<FrameFormValues>({
     mode: 'onBlur',
     resolver: zodResolver(frameFormSchema),
     defaultValues,
@@ -73,7 +73,7 @@ export function FrameStep() {
   >({})
 
   function handleBlur(fieldName: keyof typeof RANGES) {
-    const raw = values[fieldName]
+    const raw = getValues(fieldName)
     const error = validateField(fieldName, raw)
     setFieldErrors((prev) => ({ ...prev, [fieldName]: error }))
     if (!error) {

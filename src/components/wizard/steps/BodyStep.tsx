@@ -51,7 +51,7 @@ export function BodyStep() {
     arm: body?.arm !== undefined ? String(body.arm) : '',
   }
 
-  const { watch, setValue } = useForm<BodyFormValues>({
+  const { watch, setValue, getValues } = useForm<BodyFormValues>({
     mode: 'onBlur',
     resolver: zodResolver(bodyFormSchema),
     defaultValues,
@@ -66,7 +66,7 @@ export function BodyStep() {
 
   // Blur sync helper — validates inline, then writes to Zustand
   function handleBlur(fieldName: keyof typeof RANGES) {
-    const raw = values[fieldName]
+    const raw = getValues(fieldName)
     const error = validateField(fieldName, raw)
     setFieldErrors((prev) => ({ ...prev, [fieldName]: error }))
     if (!error) {

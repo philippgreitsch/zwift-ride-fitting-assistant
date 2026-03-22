@@ -53,7 +53,7 @@ export function FitReportStep() {
         : '',
   }
 
-  const { watch, setValue } = useForm<FitReportFormValues>({
+  const { watch, setValue, getValues } = useForm<FitReportFormValues>({
     mode: 'onBlur',
     resolver: zodResolver(fitReportFormSchema),
     defaultValues,
@@ -66,7 +66,7 @@ export function FitReportStep() {
   >({})
 
   function handleBlur(fieldName: keyof FitReportFormValues) {
-    const raw = values[fieldName]
+    const raw = getValues(fieldName)
     const error = validateField(raw)
     setFieldErrors((prev) => ({ ...prev, [fieldName]: error }))
     if (!error) {
