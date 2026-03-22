@@ -66,7 +66,7 @@ Plans:
 Plans:
 - [x] 03-01-PLAN.md — Add Zustand persist middleware and resetStore action to fitStore
 - [x] 03-02-PLAN.md — Install shadcn Alert, build AxisCard and OutOfRangeAlert output components
-- [ ] 03-03-PLAN.md — Wire ResultsStep to calculation engine and output components
+- [x] 03-03-PLAN.md — Wire ResultsStep to calculation engine and output components
 - [ ] 03-04-PLAN.md — Production build verification and Vercel deployment checkpoint
 
 ## Progress
@@ -78,4 +78,4 @@ Phases execute in numeric order: 1 → 2 → 3
 |-------|----------------|--------|-----------|
 | 1. Calculation Engine | 2/2 | Complete    | 2026-03-21 |
 | 2. Project Scaffold and Input UI | 4/5 | In Progress|  |
-| 3. Output, Persistence, and Deploy | 2/4 | In Progress|  |
+| 3. Output, Persistence, and Deploy | 3/4 | In Progress|  |

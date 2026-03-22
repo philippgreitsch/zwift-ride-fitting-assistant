@@ -47,7 +47,7 @@
 - [x] **OUT-01**: Output shows the target mm value for each of the 4 Zwift Ride adjustment axes
 - [x] **OUT-02**: Output shows the corresponding Zwift Ride letter position for each axis
 - [x] **OUT-03**: Output shows an out-of-range warning when a target falls outside the Zwift Ride's adjustment limits
-- [ ] **OUT-04**: Output is presented as a step-by-step adjustment guide (in order: saddle height → saddle fore/aft → bar height → bar reach)
+- [x] **OUT-04**: Output is presented as a step-by-step adjustment guide (in order: saddle height → saddle fore/aft → bar height → bar reach)
 - [x] **OUT-05**: Each output step includes a brief explanation of how to make the adjustment on the Zwift Ride
 
 ### UX & Persistence
@@ -116,7 +116,7 @@
 | OUT-01 | Phase 3 | Complete |
 | OUT-02 | Phase 3 | Complete |
 | OUT-03 | Phase 3 | Complete |
-| OUT-04 | Phase 3 | Pending |
+| OUT-04 | Phase 3 | Complete |
 | OUT-05 | Phase 3 | Complete |
 | UX-02 | Phase 3 | Complete |
 | UX-04 | Phase 3 | Complete |
