@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 02-project-scaffold-input-ui 02-05-PLAN.md
-last_updated: "2026-03-21T19:48:46.870Z"
+stopped_at: Completed 03-output-persistence-and-deploy 03-01-PLAN.md
+last_updated: "2026-03-22T11:02:09.995Z"
 progress:
   total_phases: 3
   completed_phases: 2
-  total_plans: 7
-  completed_plans: 7
+  total_plans: 11
+  completed_plans: 9
 ---
 
 # Project State
@@ -19,12 +19,12 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-21)
 
 **Core value:** Given my existing bike measurements, tell me exactly how to set up my Zwift Ride to match — in both millimeters and Zwift Ride position letters.
-**Current focus:** Phase 02 — project-scaffold-input-ui
+**Current focus:** Phase 03 — output-persistence-and-deploy
 
 ## Current Position
 
-Phase: 3
-Plan: Not started
+Phase: 03 (output-persistence-and-deploy) — EXECUTING
+Plan: 3 of 4
 
 ## Performance Metrics
 
@@ -53,6 +53,7 @@ Plan: Not started
 | Phase 02-project-scaffold-input-ui P03 | 18 | 2 tasks | 3 files |
 | Phase 02-project-scaffold-input-ui P04 | 2 | 2 tasks | 4 files |
 | Phase 02-project-scaffold-input-ui P05 | 10 | 2 tasks | 1 files |
+| Phase 03-output-persistence-and-deploy P01 | 84 | 1 tasks | 1 files |
 
 ## Accumulated Context
 
@@ -81,6 +82,9 @@ Recent decisions affecting current work:
 - [Phase 02-project-scaffold-input-ui]: seatTubeAngle uses unit=degrees not mm — per FRAME-03 type contract and Pitfall 8
 - [Phase 02-project-scaffold-input-ui]: WizardShell StepPlaceholder removed — replaced with renderStepContent() switch for cleaner step routing
 - [Phase 02-project-scaffold-input-ui]: Switched from Geist Variable to Inter font per UI-SPEC design system spec; load only Inter 400 and 600 weights via @fontsource
+- [Phase 03-output-persistence-and-deploy]: currentStep excluded from persist partialize — users always start at step 0 on reload
+- [Phase 03-output-persistence-and-deploy]: initialState extracted as const to enable atomic reset in resetStore action
+- [Phase 03-output-persistence-and-deploy]: resetStore calls clearStorage() then set(initialState) — localStorage and in-memory cleared atomically
 
 ### Pending Todos
 
@@ -94,6 +98,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-21T19:38:07.339Z
-Stopped at: Completed 02-project-scaffold-input-ui 02-05-PLAN.md
+Last session: 2026-03-22T11:02:03.665Z
+Stopped at: Completed 03-output-persistence-and-deploy 03-01-PLAN.md
 Resume file: None
